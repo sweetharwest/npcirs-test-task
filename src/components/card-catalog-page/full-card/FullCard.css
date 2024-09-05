@@ -1,0 +1,67 @@
+.full-card {
+    margin-top: 50px;
+}
+
+.full-card-header {
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 12px 15px 4px;
+    border-bottom: 2px solid black;
+}
+
+.full-card-content {
+    padding: 0 0 0 100px;
+    display: grid;
+    grid-template-columns: 800px 1fr;
+}
+
+.full-card-content-left {
+    border-right: 2px solid black;
+}
+
+.btn-close {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-left: 20px;
+}
+
+.btn-close-image {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    float: right;
+    transition: 1s;
+}
+
+.btn-close-image:hover {
+    transform: scale(1.2);
+}
+
+.btn-edit {
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+.btn-edit-image {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    float: right;
+    transition: 1s;
+}
+
+.btn-edit-image:hover {
+    transform: scale(1.2);
+}
+
+.td-key {
+    width: 200px;
+}
+
+.td-value {
+    width: 600px;
+}

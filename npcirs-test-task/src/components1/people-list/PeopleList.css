@@ -1,0 +1,21 @@
+.people-list .person-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 1rem;
+}
+
+.people-list .person-card h2,
+.people-list .person-card h3 {
+    margin-top: 0;
+}
+
+.people-list .person-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.people-list .person-card form label,
+.people-list .person-card form button {
+    margin-top: 8px;
+}

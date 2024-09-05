@@ -1,0 +1,20 @@
+.job-container {
+    padding: 4px 15px 12px;
+}
+
+.job-header {
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 12px 0 12px;
+}
+
+.job-table {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.job-table td {
+    padding: 0 0 10px 20px;
+}

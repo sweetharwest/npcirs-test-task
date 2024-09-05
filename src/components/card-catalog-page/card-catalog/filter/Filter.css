@@ -1,0 +1,39 @@
+.filters-container {
+    background-color: #ffffff;
+    padding: 30px 0 0 0;
+}
+
+.filter {
+    padding: 0 50px 25px 50px;
+    background-color: #ffffff;
+}
+
+.filter-variant {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px 0 10px 40px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.filter-variant-selected {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 10px 0 10px 40px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.filter-header {
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 20px 0 0 0;
+    background-color: #ffffff;
+}

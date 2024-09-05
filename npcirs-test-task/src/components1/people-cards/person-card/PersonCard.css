@@ -1,0 +1,53 @@
+.person-card {
+    background-color: #fff;
+    width: 280px;
+    height: 140px;
+    cursor: pointer;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.person-card-header {
+    background-color: #3870c5;
+    height: 80px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.person-card-body {
+    max-width: 320px;
+    max-height: 200px;
+    background-color: #e01919;
+    padding: 30px 20px;
+}
+
+.person-fio {
+    padding: 12px 15px 4px;
+    font-size: 18px;
+}
+
+.person-job-position {
+    background-color: #761c94;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.person-phone-number {
+    background-color: #46c523;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.person-card p {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.person-card-1 {
+
+}

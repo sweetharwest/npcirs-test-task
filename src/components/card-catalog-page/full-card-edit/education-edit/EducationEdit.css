@@ -1,0 +1,27 @@
+.education-edit-container {
+    padding: 4px 15px 12px;
+}
+
+.education-edit-header {
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 12px 0 12px;
+}
+
+.education-edit-table {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.education-edit-table td{
+    padding: 0 0 10px 20px;
+}
+
+.education-edit-input {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    width: 500px;
+}
