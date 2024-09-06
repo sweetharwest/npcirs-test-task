@@ -1,6 +1,33 @@
-.statistics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.main-page-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sex-distribution-container {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+}
+
+.sex-distribution-pie {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 50px 200px 50px 200px;
+}
+
+.sex-distribution-content {
+    margin: 50px
+    padding: 150px 0 0 0;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.sex-distribution-content p {
+    padding: 20px 0 0 50px;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
 }
