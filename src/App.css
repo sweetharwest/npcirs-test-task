@@ -1,4 +1,10 @@
 .app-container {
+    background: linear-gradient(
+            45deg,
+            hsl(197, 100%, 90%) 0%,
+            hsl(284, 100%, 92%) 100%
+    );
+    min-height: 100vh;
 }
 
 .header {

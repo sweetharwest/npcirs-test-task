@@ -66,9 +66,6 @@ const FullCardEdit = ({setIsEdit, person, onClose, people, setPeople}) => {
                 </div>
                 <Contacts contacts={person.contacts} />
             </div>
-            <button onClick={() => {handleSave(editedPerson)}}>
-                penis button
-            </button>
         </div>
     );
 };

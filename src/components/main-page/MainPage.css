@@ -1,33 +1,186 @@
+.main-page {
+    background: linear-gradient(
+            45deg,
+            hsl(197, 100%, 90%) 0%,
+            hsl(284, 100%, 92%) 100%
+    );
+}
+
 .main-page-container {
     width: 1280px;
     margin: 0 auto;
+    //background-color: #dde6f0;
+}
+
+.first-distribution-container {
+    //margin-top: 50px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 100px;
+    height: 460px;
+    //border: 1px solid #ccc;
+}
+
+.count-people {
+    text-align: center;
+    padding-top: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.count-people h1 {
+    font-size: 100px;
+    color: black;
+    line-height: 150px;
+    font-family: Inter, sans-serif;
+}
+
+.count-people p {
+    font-size: 18px;
+    color: black;
+    line-height: 26px;
+    font-family: Inter, sans-serif;
 }
 
 .sex-distribution-container {
     display: grid;
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 600px 1fr;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
 }
 
 .sex-distribution-pie {
     max-width: 400px;
     max-height: 400px;
-    margin: 50px 200px 50px 200px;
+    margin: 50px 100px 50px 100px;
+    //border: 1px solid #ccc;
 }
 
 .sex-distribution-content {
-    margin: 50px
-    padding: 150px 0 0 0;
     font-family: Inter, sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 26px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
+    margin: 60px 0 60px 0;
+    padding: 50px 100px 50px 0;
+    text-align: center;
+    //border: 1px solid #ccc;
 }
 
-.sex-distribution-content p {
-    padding: 20px 0 0 50px;
+.sex-distribution-content-header {
+    font-size: 20px;
+    color: black;
+}
+
+.sex-distribution-content-body {
+}
+
+.sex-distribution-content-body p {
     font-family: Inter, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
+    color: black;
     line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.sex-distribution-content-body h1 {
+    font-family: Inter, sans-serif;
+    font-size: 60px;
+    color: #36A2EBFF;
+    line-height: 80px;
+}
+
+.sex-distribution-content-body h2 {
+    font-family: Inter, sans-serif;
+    font-size: 60px;
+    color: #FF6384FF;
+    line-height: 80px;
+}
+
+
+
+
+.age-distribution-container {
+    display: grid;
+    grid-template-columns: 1fr 900px;
+    margin-top: 100px;
+    //border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.age-distribution-bar {
+    max-width: 800px;
+    max-height: 400px;
+    //padding: 50px 50px 50px 50px;
+    margin: 50px;
+}
+
+.age-distribution-content {
+    padding: 80px 50px;
+    text-align: center;
+    //border: 1px solid #ccc;
+    //border-radius: 20px;
+}
+
+.age-distribution-content h1 {
+    font-family: Inter, sans-serif;
+    font-size: 50px;
+    color: black;
+    line-height: 70px;
+}
+
+.age-distribution-content p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.salary-distribution-container {
+    display: grid;
+    grid-template-columns: 900px 1fr;
+    margin-top: 50px;
+    //padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.salary-distribution-line {
+    max-width: 800px;
+    max-height: 400px;
+//padding: 50px 50px 50px 50px;
+    margin: 50px;
+}
+
+.salary-distribution-content {
+    padding: 80px 50px;
+    text-align: center;
+//border: 1px solid #ccc;
+//border-radius: 20px;
+}
+
+.salary-distribution-content h1 {
+    font-family: Inter, sans-serif;
+    font-size: 50px;
+    color: black;
+    line-height: 70px;
+}
+
+.salary-distribution-content p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 26px;
+    margin-bottom: 20px;
 }

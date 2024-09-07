@@ -35,6 +35,8 @@ const MainPage = (initialPeople) => {
         },
     });
     const [sexData, setSexData] = useState({});
+    const [ageData, setAgeData] = useState({});
+    const [salaryData, setSalaryData] = useState({});
 
     useEffect(() => {
         const sexData = initialPeople.initialPeople.reduce((acc, person) => {
@@ -43,16 +45,36 @@ const MainPage = (initialPeople) => {
         }, {});
         setSexData(sexData);
 
+        let sumAge = 0;
+        let count = 0;
+        let minAge = 100;
+        let maxAge = 0;
+
         const ageData = initialPeople.initialPeople.reduce((acc, person) => {
             let age = Math.floor((new Date() - person.personalInformation.birthDate)/31557600000);
             acc[age] = (acc[age] || 0) + 1;
+            sumAge += age;
+            count++;
+            minAge = age < minAge ? age : minAge;
+            maxAge = age > maxAge ? age : maxAge;
             return acc;
         }, {});
+        setAgeData({sumAge, count, minAge, maxAge});
+
+        let sumSalary = 0;
+        count = 0;
+        let minSalary = 10000000;
+        let maxSalary = 0;
 
         const salaryData = initialPeople.initialPeople.reduce((acc, person) => {
             acc[person.job.salary] = (acc[person.job.salary] || 0) + 1;
+            sumSalary += person.job.salary;
+            count++;
+            minSalary = person.job.salary < minSalary ? person.job.salary : minSalary;
+            maxSalary = person.job.salary > maxSalary ? person.job.salary : maxSalary;
             return acc;
         }, {});
+        setSalaryData({sumSalary, count, minSalary, maxSalary});
 
         setChartData({
             sex: {
@@ -95,21 +117,51 @@ const MainPage = (initialPeople) => {
     }, [initialPeople]);
 
     return (
-        <div className="main-page-container">
-            <div className="sex-distribution-container">
-                <Pie className="sex-distribution-pie" data={chartData.sex}/>
-                <div className="sex-distribution-content">
-                    Распределение по полу:
-                    <p>Мужчин: {Object.values(sexData)[0]}</p>
-                    <p>Женщин: {Object.values(sexData)[1]}</p>
+        <div className="main-page">
+            <div className="main-page-container">
+                <div className="first-distribution-container">
+                    <div className="count-people">
+                        <h1>{ageData.count}</h1>
+                        <p>Общее количество людей</p>
+                    </div>
+                    <div className="sex-distribution-container">
+                        <Pie className="sex-distribution-pie" data={chartData.sex}/>
+                        <div className="sex-distribution-content">
+                            <div className="sex-distribution-content-body">
+                                <h1>{Object.values(sexData)[0]}</h1>
+                                <p>мужчин</p>
+                                <h2>{Object.values(sexData)[1]}</h2>
+                                <p>женщин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="age-distribution-container">
+                    <div className="age-distribution-content">
+                        <h1>{ageData.sumAge / ageData.count}</h1>
+                        <p>средний возраст</p>
+                        <h1>{ageData.minAge}</h1>
+                        <p>наименьший возраст</p>
+                        <h1>{ageData.maxAge}</h1>
+                        <p>наибольший возраст</p>
+                    </div>
+                    <Bar className="age-distribution-bar" data={chartData.age}/>
+                </div>
+
+
+                <div className="salary-distribution-container">
+                    <Line className="salary-distribution-line" data={chartData.salary}/>
+                    <div className="salary-distribution-content">
+                        <h1>{salaryData.sumSalary / salaryData.count}</h1>
+                        <p>средняя зарплата</p>
+                        <h1>{salaryData.minSalary}</h1>
+                        <p>наименьшая зарплата</p>
+                        <h1>{salaryData.maxSalary}</h1>
+                        <p>наибольшая зарплата</p>
+                    </div>
                 </div>
             </div>
-
-            <h2>Распределение по возрасту</h2>
-            <Bar data={chartData.age}/>
-
-            <h2>Рапределение по зарплате</h2>
-            <Line data={chartData.salary}/>
         </div>
     );
 }

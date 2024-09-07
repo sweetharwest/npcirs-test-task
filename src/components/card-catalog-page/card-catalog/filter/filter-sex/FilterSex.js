@@ -9,17 +9,6 @@ const FilterSex = ({people, sexFilter, setSexFilter}) => {
             <div className="filter-header">
                 Пол
             </div>
-            {variants.map((variant, index) => (
-                <div
-                    className={variant === sexFilter? "filter-variant-selected" : "filter-variant"}
-                    onClick={() => {
-                        setSexFilter(variant);
-                    }}
-                    key={index}
-                >
-                    {variant}
-                </div>
-            ))}
             <div
                 className={sexFilter? "filter-variant" : "filter-variant-selected"}
                 onClick={() => {
@@ -28,6 +17,17 @@ const FilterSex = ({people, sexFilter, setSexFilter}) => {
             >
                 Любой
             </div>
+            {variants.map((variant, index) => (
+                <div
+                    className={variant === sexFilter? "filter-variant-selected" : "filter-variant"}
+                    onClick={() => {
+                        setSexFilter(variant === sexFilter ? null : variant);
+                    }}
+                    key={index}
+                >
+                    {variant}
+                </div>
+            ))}
         </div>
     );
 };

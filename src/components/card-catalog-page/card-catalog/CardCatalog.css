@@ -1,7 +1,6 @@
 .card-catalog {
     width: 1280px;
     margin: 0 auto;
-    background: white;
     display: grid;
     grid-template-columns: 400px 1fr;
 }
