@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './EducationEdit.css';
 
 const EducationEdit = ({editedPerson, setEditedPerson}) => {

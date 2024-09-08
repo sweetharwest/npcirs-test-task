@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Job.css';
 import JobStack from "./job-stack/JobStack";
 

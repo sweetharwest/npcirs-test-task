@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import './FullCardEdit.css';
-import closeImage from "../../../images/icon-close.png";
 import PersonalInformationEdit from "./personal-information-edit/PersonalInformationEdit";
 import JobEdit from "./job-edit/JobEdit";
 import EducationEdit from "./education-edit/EducationEdit";
 import Contacts from "../full-card/contacts/Contacts";
 import backImage from "../../../images/icon-back.png";
 import saveImage from "../../../images/icon-save.png";
+import closeImage from "../../../images/icon-close.png";
 
 const FullCardEdit = ({setIsEdit, person, onClose, people, setPeople}) => {
     const [editedPerson, setEditedPerson] = useState({...person});

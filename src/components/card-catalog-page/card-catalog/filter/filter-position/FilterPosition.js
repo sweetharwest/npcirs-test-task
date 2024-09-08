@@ -5,7 +5,7 @@ const FilterPosition = ({people, positionFilter, setPositionFilter}) => {
     const variants = [...new Set(people.map((person) => person.job.position))];
     const [showAll, setShowAll] = useState(false);
 
-    const displayedVariants = showAll ? variants : variants.slice(0, 5);
+    const displayedVariants = showAll ? variants : variants.slice(0, 4);
 
     return (
         <div className="filter">
@@ -31,11 +31,13 @@ const FilterPosition = ({people, positionFilter, setPositionFilter}) => {
                     {variant}
                 </div>
             ))}
-            <div
-                className="filter-variant"
-                onClick={() => setShowAll(!showAll)}>
-                {showAll ? "Показать меньше" : "Показать все"}
-            </div>
+            {variants.length > 4 ? (
+                <div
+                    className="filter-variant"
+                    onClick={() => setShowAll(!showAll)}>
+                    {showAll ? "Показать меньше" : "Показать все"}
+                </div>
+            ) : (<div></div>)}
         </div>
     );
 };

@@ -1,6 +1,22 @@
 .table-page {
-    height: 100%;
-    overflow-y: auto;
+    //height: 100%;
+    //overflow-y: auto;
+    width: 1180px;
+    margin: 50px auto;
+    padding: 50px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.table-page h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+
 }
 
 .table-page table {
@@ -16,5 +32,5 @@
 }
 
 .table-page table th {
-    background-color: #f2f2f2;
+    //background-color: #f2f2f2;
 }

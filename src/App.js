@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import TablePage from './components/table-page/TablePage';
 import CardCatalogPage from './components/card-catalog-page/CardCatalogPage';
 import MainPage from "./components/main-page/MainPage";
-import './App.css';
 import {getPeople} from "./services/api";
+import './App.css';
 
 function App() {
 

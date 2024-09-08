@@ -1,0 +1,19 @@
+.filter-age-range {
+    display: grid;
+    grid-template-columns: 30px 90px 30px 80px;
+    padding: 10px 0 10px 40px;
+}
+
+.filter-ahe-range-label {
+    width: 30px;
+    font-size: 18px;
+}
+
+.filter-ahe-range-input {
+    width: 80px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: center;
+}
